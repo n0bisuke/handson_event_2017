@@ -1,0 +1,17 @@
+{
+  "name": "reactnative_20170219",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "create-react-app myapp",
+    "start": "create-react-app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^1.0.4"
+  }
+}
