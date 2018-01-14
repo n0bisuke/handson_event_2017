@@ -1,0 +1,37 @@
+<!--webrtc -->
+<button type="button" id="start-video">Start Video</button>
+<button type="button" id="stop-video">Stop Video</button>
+&nbsp;
+<button type="button" id="connect">Connect</button>
+<button type="button" id="hangUp">Hang Up</button>
+<div>
+    <video id="local_video" autoplay style="width: 160px; height: 120px; border: 1px solid black;"></video>
+    <video id="remote_video" autoplay style="width: 160px; height: 120px; border: 1px solid black;"></video>
+</div>
+<p>SDP to send:<br />
+    <textarea id="text_for_send_sdp" rows="5" cols="60" readonly="readonly">SDP to send</textarea>
+</p>
+<p>SDP to receive:&nbsp;
+    <button type="button" id="onSdpText">Receive remote SDP</button><br />
+    <textarea id="text_for_receive_sdp" rows="5" cols="60"></textarea>
+</p>
+<!--webrtc -->
+
+<div id="messages" class="container">
+</div>
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="input-group">
+          <span class="input-group-addon">@</span>
+          <input id="user" type="text" class="form-control" placeholder="user">
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <input id="message-input" class="form-control" />
+      </div>
+    </div>
+  </div>
+</div>

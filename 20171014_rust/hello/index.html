@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      // Emscriptenで使用するModuleオブジェクト。
+      // グローバルで宣言する。
+      var Module = {};
+ 
+      fetch('hello.wasm')
+        .then((response) => response.arrayBuffer())
+        .then((buffer) => {
+          // Module.wasmBinaryにhello.wasmの内容を書き込む。
+          Module.wasmBinary = buffer;
+ 
+          // scriptタグを追加してhello.jsを実行する。
+          const scriptElem = document.createElement('script');
+          scriptElem.src = 'hello.js';
+          document.body.appendChild(scriptElem);
+        });
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,57 @@
+New log file opened at Sat Mar 25 13:26:59 JST 2017 by 42622@n0bisuke-ubuntu.local
+Taking next connection to: 52108
+New client attempting to connect on port: 52109-52108
+  Address = /192.168.0.100:52108
+This client on port 52109 has uuid 0ddb714c-fffd-4c20-bdb3-db77af1aa75b configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-0ddb714c-fffd-4c20-bdb3-db77af1aa75b
+Taking next connection to: 52108
+New client attempting to connect on port: 52110-52108
+  Address = /192.168.0.100:52108
+Handshake exception on socket: 52110
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 52108
+New client attempting to connect on port: 52111-52108
+  Address = /192.168.0.100:52108
+This client on port 52111 has uuid 8443ad0b-daa1-48e9-a46a-0fe80a6a6a56 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-0ddb714c-fffd-4c20-bdb3-db77af1aa75b, activator-8443ad0b-daa1-48e9-a46a-0fe80a6a6a56
+Taking next connection to: 52108
+New client attempting to connect on port: 52131-52108
+  Address = /192.168.0.100:52108
+Handshake exception on socket: 52131
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 52108
+New client attempting to connect on port: 52134-52108
+  Address = /192.168.0.100:52108
+This client on port 52134 has uuid 5f050da1-1b7a-4fdb-816c-89ecf520f6d8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-5f050da1-1b7a-4fdb-816c-89ecf520f6d8
+Taking next connection to: 52108
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 42622@n0bisuke-ubuntu.local logs at Sat Mar 25 13:31:27 JST 2017, goodbye.
